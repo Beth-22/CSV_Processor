@@ -1,5 +1,5 @@
 
-#  CSV Sales Aggregator
+# CSV Sales Aggregator
 
 This is a Node.js + React app that processes large CSV files containing departmental sales data. It aggregates total sales per department and returns a downloadable processed CSV.
 
@@ -10,15 +10,18 @@ This is a Node.js + React app that processes large CSV files containing departme
 - Upload large `.csv` files via UI
 - Stream-based processing for memory efficiency
 - Aggregates sales per department
-- Download result as new CSV file
+- Download result as a new CSV file
 - Displays upload progress
 - Response includes useful metrics
 
 ---
 
+
+
 ##  Backend Setup
 
 ### 1. Install Dependencies
+
 ```bash
 cd backend
 npm install
@@ -30,7 +33,9 @@ npm install
 npm run dev
 ```
 
-Runs on: `http://localhost:3000`
+The backend server will run on: `http://localhost:3000`
+
+---
 
 ### 3. Directory Structure
 
@@ -54,7 +59,7 @@ backend/
 
 ---
 
-##  Testing
+## Testing Backend
 
 ### Run Unit Tests
 
@@ -68,7 +73,7 @@ npm test
 
 ---
 
-##  Upload Endpoint
+## Upload Endpoint
 
 **POST** `/upload`
 
@@ -77,7 +82,7 @@ npm test
 * `multipart/form-data`
 * Field: `file` (.csv)
 
-### Response (200 OK):
+###  Response (200 OK):
 
 ```json
 {
@@ -112,33 +117,28 @@ cd frontend
 npm install
 ```
 
-### 2. Run App
+### 2. Run Frontend App
 
 ```bash
 npm run dev
 ```
 
-Runs on: `http://localhost:5173` (or nearest port)
+The frontend will run on: `http://localhost:5173` (or nearest available port)
 
-### UI Includes:
+---
 
-* File upload input
-* Upload progress bar
-* Success message + download link
+## 🔄 Starting the Application
+
+1. Start the backend server first as described above.
+2. In a separate terminal, start the frontend app.
+3. Open your browser at `http://localhost:5173`.
+4. Use the file upload input to select and upload a `.csv` file.
+5. View upload progress.
+6. Download the aggregated CSV file when processing completes.
 
 ---
 
 ##  Algorithm & Performance Strategy
-
-### Problem:
-
-Aggregate total sales by department from a CSV file with this structure:
-
-```
-Department Name,Date,Number of Sales
-New York,2023-01-01,100
-Boston,2023-01-01,50
-```
 
 ### Solution Strategy:
 
@@ -148,7 +148,7 @@ Boston,2023-01-01,50
 
 ### Memory Efficiency:
 
- Uses **streaming** — avoids loading the entire file in memory
+ Uses **streaming** — avoids loading entire file into memory
  Supports large files that can't fit in RAM
 
 ---
@@ -169,7 +169,8 @@ Boston,2023-01-01,50
 * Rejects other MIME types via `multer`
 
 ---
-![Screenshot description](frontend/src/assets/Screenshot-2025-06-19-061654.png)
 
+##  Screenshot
 
+![App Screenshot](frontend/src/assets/Screenshot-2025-06-19-061654.png)
 
