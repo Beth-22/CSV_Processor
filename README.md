@@ -5,7 +5,7 @@ This is a Node.js + React app that processes large CSV files containing departme
 
 ---
 
-## 🚀 Features
+##  Features
 
 - Upload large `.csv` files via UI
 - Stream-based processing for memory efficiency
@@ -16,7 +16,7 @@ This is a Node.js + React app that processes large CSV files containing departme
 
 ---
 
-## 📂 Backend Setup
+##  Backend Setup
 
 ### 1. Install Dependencies
 ```bash
@@ -54,7 +54,7 @@ backend/
 
 ---
 
-## 🧪 Testing
+##  Testing
 
 ### Run Unit Tests
 
@@ -68,7 +68,7 @@ npm test
 
 ---
 
-## 📤 Upload Endpoint
+##  Upload Endpoint
 
 **POST** `/upload`
 
@@ -77,7 +77,7 @@ npm test
 * `multipart/form-data`
 * Field: `file` (.csv)
 
-### 📊 Response (200 OK):
+### Response (200 OK):
 
 ```json
 {
@@ -103,7 +103,7 @@ npm test
 
 ---
 
-## 🖥️ Frontend Setup (React + Vite)
+##  Frontend Setup (React + Vite)
 
 ### 1. Install Dependencies
 
@@ -148,12 +148,12 @@ Boston,2023-01-01,50
 
 ### Memory Efficiency:
 
-✅ Uses **streaming** — avoids loading the entire file in memory
-✅ Supports large files that can't fit in RAM
+ Uses **streaming** — avoids loading the entire file in memory
+ Supports large files that can't fit in RAM
 
 ---
 
-## 📈 Big O Complexity
+##  Big O Complexity
 
 | Operation                    | Complexity   |
 | ---------------------------- | ------------ |
@@ -170,12 +170,6 @@ Boston,2023-01-01,50
 
 ---
 ![Screenshot description](frontend/src/assets/Screenshot-2025-06-19-061654.png)
-
-
-## 👨‍🔧 Author
-
-Built by Bethlehem Woldekidan — 3rd-year Software Engineering student @ AAiT
-
 
 
 
