@@ -127,7 +127,7 @@ The frontend will run on: `http://localhost:5173` (or nearest available port)
 
 ---
 
-## 🔄 Starting the Application
+##  Starting the Application
 
 1. Start the backend server first as described above.
 2. In a separate terminal, start the frontend app.
