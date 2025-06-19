@@ -1,5 +1,5 @@
 
-# CSV Sales Aggregator
+# CSV Processor
 
 This is a Node.js + React app that processes large CSV files containing departmental sales data. It aggregates total sales per department and returns a downloadable processed CSV.
 
